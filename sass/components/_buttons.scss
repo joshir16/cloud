@@ -1,0 +1,14 @@
+/** @format */
+
+.btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    transform: scale(0.92);
+  }
+}

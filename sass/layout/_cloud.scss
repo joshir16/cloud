@@ -1,0 +1,50 @@
+/** @format */
+
+.cloud {
+  margin: 2rem 0;
+  width: 100%;
+
+  background-color: var(--primary-color);
+  color: #fff;
+
+  &__container {
+    max-width: 120rem;
+    height: auto;
+
+    margin: auto;
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    gap: 20px;
+
+    justify-content: center;
+    align-items: center;
+
+    &__box {
+      width: 100%;
+      @include flex-box;
+      flex-direction: column;
+
+      &--heading {
+        font-size: 5rem;
+      }
+
+      &--para {
+        font-size: 2rem;
+      }
+
+      &--btn {
+        font-size: 1.8rem;
+        color: #fff;
+        background-color: var(--dark-color);
+        margin-top: 1.5rem;
+      }
+    }
+
+    &--img {
+      width: 100%;
+      background-size: cover;
+    }
+  }
+}

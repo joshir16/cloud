@@ -1,0 +1,49 @@
+/** @format */
+
+.lang {
+  margin: 2rem 0;
+  width: 100%;
+
+  &__container {
+    max-width: 120rem;
+    height: auto;
+    margin: auto;
+
+    @include flex-box;
+    flex-direction: column;
+
+    &__heading {
+      font-size: 3rem;
+    }
+
+    &__box {
+      @include flex-box;
+      flex-wrap: wrap;
+
+      &--card {
+        background-color: #fff;
+        color: #333;
+        border-radius: 10px;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+
+        text-align: center;
+        margin: 18px 10px 40px;
+        transition: transform 0.2s ease-in;
+
+        @include flex-box;
+        flex-direction: column;
+
+        &:hover {
+          transform: translateY(-15px);
+        }
+
+        &--name {
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
