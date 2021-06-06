@@ -11,6 +11,13 @@
   --error-color: #d9534f;
 }
 
+$bp-huge: 93.75em; // 1500px
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 28.75em; // 460px
+
 *,
 *::after,
 *::before {
@@ -23,12 +30,27 @@ html {
   //defines what 1rem is (10px)
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 43.75%;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 37.5%;
+  }
 }
 
 body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  color: #333;
   line-height: 1.6;
 }
 
@@ -44,7 +66,6 @@ a {
 h1,
 h2 {
   font-weight: 400;
-  // color: #333;
 }
 
 p {

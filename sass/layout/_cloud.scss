@@ -18,8 +18,13 @@
     grid-template-columns: 4fr 3fr;
     gap: 20px;
 
-    justify-content: center;
-    align-items: center;
+    justify-items: center;
+    align-content: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, min-content);
+    }
 
     &__box {
       width: 100%;
@@ -45,6 +50,10 @@
     &--img {
       width: 100%;
       background-size: cover;
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 60%;
+      }
     }
   }
 }
