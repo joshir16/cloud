@@ -12,10 +12,6 @@
     @include flex-box;
     flex-direction: column;
 
-    &__heading {
-      font-size: 3rem;
-    }
-
     &__box {
       @include flex-box;
       flex-wrap: wrap;
